@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<style>
+		
+		@font-face
+		{
+		font-family: myFirstFont;
+		src: url('Helvetica-Light-06.ttf');
+		}
+		
+		.text{
+			font-family: myFirstFont;
+			font-size:100px;
+		}
+		
+		</style>
+		
+	
+	</head>
+	
+	
+
+	<body>
+		
+		<div class="text" id="time">123456789</div>
+		
+
+	</body>
+	
+	<script>
+	
+	
+	function yes(){
+	var time = new Date();
+	
+	var hour = time.getHours();
+		
+	var min = time.getMinutes();
+	
+	var sec = time.getSeconds();
+	
+	var now_time = hour+":"+min+":"+sec;
+	
+	var now_times = document.getElementById("time");
+	
+	now_times.innerHTML = hour + ":" + min + ":" + sec ;
+	
+	}
+	
+	setInterval(yes,1000);
+	
+	
+	
+	
+	
+	</script>
+	
+	
+
+</html>
