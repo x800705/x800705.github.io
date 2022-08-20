@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+	<title>轮播图</title>
+	<style>
+	    #pp2{
+		width:9999px;
+		height:9999px;
+		animation:switch 16s  infinite;
+		}
+		#pp2>div{
+		float:left;
+		}
+		#pp1{
+		width:820px;
+		height:340px;
+		overflow:hidden;
+		}
+		@keyframes switch{
+		0%{};
+		20%{transform:translateX(0px);}
+		40%{transform:translateX(-820px);}
+		60%{transform:translateX(-1640px);}
+		80%{transform:translateX(-2460px);}
+		100%{transform:translateX(-3280px);}
+		}
+		
+		#pp2>div{
+			width:820px;
+			height:340px;
+			font-size: 40px;
+			verticle-align:middle
+		}
+		
+		.donghui{
+			font-size:38px;
+			float:left;
+			font-family: mFont;
+		}
+		
+		.vs{
+			font-size:30px;
+			float:right;
+			font-family: mFont;
+		}
+		
+		@font-face {
+			font-family:mFont;
+			src: url("kun.ttf");
+		}
+		
+	</style>
+</head>
+    <body>
+		<div class="donghui">东辉杯2022实时互动墙</div>
+		<div class="vs"> HG 2-1 DG</div>
+		<br>
+		<br>
+		<br>
+		<br>
+	    <div id="pp1">
+		    <div id="pp2">
+			     <div>HG决赛等你</div>
+				 <div>HG七年老粉，希望HG进入决赛</div>
+				 <div>HG利用好赛点</div>
+				 <div>DG挺稳的，送HG放假</div>
+				 <div>希望DG拿下SFF首个大满贯</div>
+			</div>
+	    </div>
+    </body>
+</html>
+
